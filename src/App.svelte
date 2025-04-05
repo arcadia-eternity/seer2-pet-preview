@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { onDestroy, onMount } from "svelte";
   import { ActionState } from "./FighterActionType";
   import 'seer2-pet-animator'
 
@@ -86,12 +86,13 @@
     petRender.addEventListener('ready', handleSWFReady);
     petRender.addEventListener('animationComplete', handleAnimationComplete);
     petRender.addEventListener('hit', handleHit);
-    return () => {
-      window.removeEventListener("resize", checkMobile);
-      petRender?.removeEventListener('ready', handleSWFReady);
-      petRender?.removeEventListener('animationComplete', handleAnimationComplete);
-      petRender?.removeEventListener('hit', handleHit);
-    };
+  });
+
+  onDestroy(() => {
+    window.removeEventListener("resize", checkMobile);
+    petRender?.removeEventListener('ready', handleSWFReady);
+    petRender?.removeEventListener('animationComplete', handleAnimationComplete);
+    petRender?.removeEventListener('hit', handleHit);
   });
 
   const handleSWFReady = async () => {
