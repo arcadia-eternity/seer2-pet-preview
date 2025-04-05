@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       seer2-pet-animator:
-        specifier: ^0.0.12
-        version: 0.0.12
+        specifier: ^0.0.13
+        version: 0.0.13
     devDependencies:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.0.3
@@ -452,8 +452,8 @@ packages:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
 
-  seer2-pet-animator@0.0.12:
-    resolution: {integrity: sha512-+sejEwIGdLaXFUBfU0UBQVOVVWT2mu4uaLUO9mIO3cCnssbLs7xgrV4PR/vHzPJQTfazcsjpwWw3c/+g/O0IeA==}
+  seer2-pet-animator@0.0.13:
+    resolution: {integrity: sha512-W5YdGnpcO8AejS+ssul0+ER5qCgXC+ag1wbnS6kx2eBjoASOoVQC9316hARg9U7Thrs9fGh2HkIi1SVSKSDB8A==}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -855,7 +855,7 @@ snapshots:
     dependencies:
       mri: 1.2.0
 
-  seer2-pet-animator@0.0.12:
+  seer2-pet-animator@0.0.13:
     dependencies:
       lit: 3.2.1
 
